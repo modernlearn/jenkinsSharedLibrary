@@ -1,11 +1,14 @@
-pipeline {
-    agent any
+#! /usr/bin/groovy
+def call(){
+    pipeline {
+        agent any
 
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-          
+        stages {
+            stage('Hello') {
+                steps {
+                    echo 'Hello World'
+
+                }
             }
         }
     }

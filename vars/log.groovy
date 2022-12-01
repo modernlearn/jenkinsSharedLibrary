@@ -4,4 +4,9 @@ def info(message) {
 
 def warning(message) {
     echo "WARNING: ${message}"
+
+    script {
+
+        sh "ls -l"
+    }
 }
